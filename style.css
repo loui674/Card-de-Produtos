@@ -3,3 +3,19 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+
+.product-card logo-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card logo-card img{
+    height: 58px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.product-card logo-card i{
+    font-size: 27px;
+}
