@@ -1,0 +1,48 @@
+:root{
+    --primary: #18253c;
+    --secondary: #00dd53;
+    --bg: #0e1523;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider{
+    background-color: var(--bg) ;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+
+    font: normal 1rem sans-serif;
+}
+
+.card{
+    width: 17rem;
+    height: 23rem;
+    background-color: var(--primary);
+    border-radius: 1rem;
+    border: .1rem solid transparent;
+    box-shadow: 0 .2rem .4rem #0003;
+    transition: .5s ease-in-out;
+}
+
+.card:hover{
+    border: .1rem solid var(--secondary);
+    transform: scale(1.05);
+}
+
+.card::before, .card::after{
+    position: absolute;
+    content: "";
+    background-color: var(--secondary);
+    border-radius: 50%;
+}
+
+.card::before{
+    width: 9rem;
+    height: 9rem;
+}
